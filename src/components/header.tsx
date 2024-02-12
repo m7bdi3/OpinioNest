@@ -13,7 +13,7 @@ export default function Header() {
     <Navbar className="shadow mb-6">
       <NavbarBrand>
         <Link href="/" className="font-bold">
-          Discuss
+        OpinioNest
         </Link>
       </NavbarBrand>
       <NavbarContent justify="center">
