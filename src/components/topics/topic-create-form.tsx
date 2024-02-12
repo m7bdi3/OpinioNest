@@ -11,7 +11,6 @@ import {
 import * as actions from "@/actions";
 import FormButton from "../common/form-button";
 
-
 export default function TopicCreateForm() {
   const [formState, action] = useFormState(actions.createTopic, {
     errors: {},
@@ -20,7 +19,9 @@ export default function TopicCreateForm() {
   return (
     <Popover placement="left">
       <PopoverTrigger>
-        <Button color="primary">Create a topic</Button>
+        <Button color="primary" className="w-min">
+          Create a topic
+        </Button>
       </PopoverTrigger>
       <PopoverContent>
         <form action={action}>
@@ -48,8 +49,9 @@ export default function TopicCreateForm() {
                 {formState.errors._form?.join(", ")}
               </div>
             ) : null}
-
-            <FormButton>Submit</FormButton>
+            <div className="flex justify-center">
+              <FormButton>Submit</FormButton>
+            </div>
           </div>
         </form>
       </PopoverContent>

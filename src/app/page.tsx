@@ -10,7 +10,7 @@ export default function Home() {
         <h1 className="text-xl m-2">Top Posts</h1>
         <PostList fetchData={fetchTopPosts} />
       </div>
-      <div className="border shadow py-3 px-2">
+      <div className="border rounded-md flex flex-col shadow py-3 px-2">
         <TopicCreateForm />
         <Divider className="my-2" />
         <h3 className="text-lg">Topics</h3>
